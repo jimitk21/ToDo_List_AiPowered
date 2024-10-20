@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Note</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="note-container">
+        <h2>Full Note</h2>
+        <div id="fullNoteContent"></div>
+        <a href="index.html">Back to Notes</a> <!-- Link to go back to the main page -->
+    </div>
+
+    <script>
+        // Retrieve the full note content from sessionStorage
+        const fullNoteContent = sessionStorage.getItem('fullNoteContent');
+
+        // Display the full note content in the div
+        document.getElementById('fullNoteContent').innerHTML = fullNoteContent || 'No content available';
+    </script>
+</body>
+</html>
